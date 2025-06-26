@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <main>
+    <h1 class="title">Cursos</h1>
+    <div class="kanban">
+      <!--Coluna1-->
+    <div class="kanba-column" data-id="1">
+      <div class="kanban-title">
+        <h2>Há fazer</h2>
+        <button class="add-card">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div class="kanban-cards" data-red>
+        <div class="kanban-card" draggable="true">
+        <div class="badge red">
+          <span>Typescript</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge red">
+          <span>next.js</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge red">
+          <span>Vue.js</span>
+        </div>
+        </div>
+      </div>
+    </div>
+   <!--Coluna2-->
+    <div class="kanba-column" data-id="2">
+      <div class="kanban-title">
+        <h2>Fazendo</h2>
+      </div>
+      <div class="kanban-cards" data-blue>
+        <div class="kanban-card" draggable="true">
+        <div class="badge blue">
+          <span>React</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge blue">
+          <span>Bootstrap</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge blue">
+          <span>Sass
+          </span>
+        </div>
+        </div>
+      </div>
+    </div>
+   <!--Coluna3-->
+    <div class="kanba-column" data-id="3">
+      <div class="kanban-title">
+        <h2>Feitos</h2>
+      </div>
+      <div class="kanban-cards" data-green>
+        <div class="kanban-card" draggable="true">
+        <div class="badge green">
+          <span>Lógica</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge green">
+          <span>UI/UX Design</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge green">
+          <span>HTML e CSS</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge green">
+          <span>javascript</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge green">
+          <span>Tailwind</span>
+        </div>
+        </div>
+        <div class="kanban-card" draggable="true">
+        <div class="badge green">
+          <span>Git/GitHub</span>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   
+  </main>
+</body>
+<script src="src/javascript/script.js"></script>
+</html>
