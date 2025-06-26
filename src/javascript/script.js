@@ -41,7 +41,7 @@ class Kanban {
   }
 
   dragLeave(event){
-    event.currentTarget.classList.add('cards-hover')
+    event.currentTarget.classList.remove('cards-hover')
   }
 
   drop(event){
