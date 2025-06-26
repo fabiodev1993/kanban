@@ -48,18 +48,16 @@ class Kanban {
     event.currentTarget.classList.remove('cards-hover');
     const dragCard = document.querySelector('.kanban-card.dragging');
     event.currentTarget.appendChild(dragCard);
+    let e = event.currentTarget.lastElementChild.lastElementChild;
     if(dragCard.parentElement === this.columns[0]){
-      event.currentTarget.lastElementChild.lastElementChild.classList.remove('blue');
-      event.currentTarget.lastElementChild.lastElementChild.classList.remove('green');
-      event.currentTarget.lastElementChild.lastElementChild.classList.add('red');
+      e.classList.remove('blue','green');
+      e.classList.add('red');
     }else if(dragCard.parentElement === this.columns[1]){
-      event.currentTarget.lastElementChild.lastElementChild.classList.remove('red');
-      event.currentTarget.lastElementChild.lastElementChild.classList.remove('green');
-      event.currentTarget.lastElementChild.lastElementChild.classList.add('blue');
+      e.classList.remove('red','green');
+      e.classList.add('blue');
     }else if(dragCard.parentElement === this.columns[2]){
-      event.currentTarget.lastElementChild.lastElementChild.classList.remove('red');
-      event.currentTarget.lastElementChild.lastElementChild.classList.remove('blue');
-      event.currentTarget.lastElementChild.lastElementChild.classList.add('green');
+      e.classList.remove('red','blue');
+      e.classList.add('green');
     }
   }
 
