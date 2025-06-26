@@ -1,9 +1,7 @@
 class Kanban {
-  constructor(columns,cards,addCard,bedges){
+  constructor(columns,cards){
     this.columns = document.querySelectorAll(columns);
     this.cards = document.querySelectorAll(cards);
-    this.addCard = document.querySelector(addCard)
-    this.bedges = document.querySelectorAll(bedges)
   }
 
   bind(){
@@ -25,7 +23,6 @@ class Kanban {
       column.addEventListener('drop', this.drop);
     });
   };
-  
 
   dragStart(event){
     event.currentTarget.classList.add('dragging');
@@ -69,5 +66,5 @@ class Kanban {
 
 
 
-const kanban = new Kanban('.kanban-cards', '.kanban-card','.add-card','.badge');
+const kanban = new Kanban('.kanban-cards', '.kanban-card');
 kanban.init()
